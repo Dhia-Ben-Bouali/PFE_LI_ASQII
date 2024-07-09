@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ordoance.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="form">
+        <div class="title">ordonnance</div>
+        <div class="subtitle">Add Prescription</div>
+        <div class="input-container ic1">
+          <input id="firstname" name="firstname" class="input" type="text" placeholder=" " required />
+          <div class="cut"></div>
+          <label for="firstname" class="placeholder">Doctor</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="lastname" name="lastname"  class="input" type="text" placeholder=" " required/>
+          <div class="cut"></div>
+          <label for="lastname" class="placeholder">Patient</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="email" name="email" class="input" type="date" placeholder="Date" required />
+          <div class="cut cut-short"></div>
+          <label for="email" class="placeholder">Date</label>
+        </div>
+        <div class="input-container ic2">
+            <select for="drug" name="drug" id="pet-select" class="input" style="padding-left:20px;" placeholder=" ">
+                <option value="Drugs">Drugs</option>
+                <option value="Digoxin">Panadol</option>
+                <option value="Lofexidine">Lofexidine</option>
+                <option value="Tradjenta">Tradjenta</option>
+            </select>
+            <div class="cut cut-short"></div>
+            <label for="pet-select" class="placeholder">Drugs</label>
+        </div>
+        <div class="input-container ic2">
+          <input id="email" name="email" class="input" type="number" placeholder="QT" required />
+          <div class="cut cut-short"></div>
+          <label for="email" class="placeholder">QT</label>
+        </div>
+        <div>
+            <button onclick="send()" class="submit">Submit</button>
+        </div>
+        <script type="text/Javascript" src="ordonnance.js"></script>
+      </div>
+</body>
+</html>

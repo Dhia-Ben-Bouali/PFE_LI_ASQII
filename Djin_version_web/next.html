@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="next.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+        <!-- include highchartsjs to build the charts-->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <!-- include to use jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- include Gauges Javascript library-->
+        <script src="https://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 style="color: aliceblue;">Ordonnance</h1>
+        </div>
+        <div class="multi-button">
+            <button onclick="Hamadi()">Patient 1</button>
+            <button onclick="Yousef()">Patient 2</button>
+            <button onclick="Marwa()">Patient 3</button>
+            <button onclick="Samir()">Patient 4</button>
+            <button onclick="Sofiya()">Patient 5</button>
+            <button onclick="Dhia()">Patient 6</button>
+        </div>
+        <div class="table-wrapper">
+            <table class="fl-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Num-Ord: </td>
+                        <td id="ord"></td>
+                    </tr>
+                    <tr>
+                        <td>Medicament / Quantité: </td>
+                        <td id="med"></td>
+                    </tr>
+                    <tr>
+                        <td>Medecin :</td>
+                        <td id="medecin"></td>
+                    </tr>
+                    <tr>
+                        <td>Date :</td>
+                        <td id="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiroir :</td>
+                        <td id="tir"></td>
+                    </tr>
+                <tbody>
+            </table>
+        </div>
+        <div class="containe">
+            <button onclick="writeData()" class="button_open">Open Box</button>
+            <button onclick="writeData1()" class="button_open">Close Box</button>
+            <a href="ordonnce.html"><button onclick="progress()" class="button_open">Ordonnance</button></a>
+        </div>
+        <div><h2 class="tite4" id="titre"></h2></div>
+       <div class="popup" id="popup">
+            <img src="img/404-tick12.png" alt="404">
+            <h2>Confirmez votre identité</h2>
+            <p>Veuillez insérer votre empreinte pour débloquer le tiroir</p>
+            <button type="button" onclick="Closepopup()">OK</button>
+        </div>
+        <script type="text/javascript" src="next.js"></script>
+        <script type="text/javascript" src="ordonnance.js"></script> 
+    </div>
+</body>
+</html>
